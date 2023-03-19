@@ -16,17 +16,21 @@ let logo = document.querySelector('.b-logo');
 
 // --------fixed nav bar -----------
 let navBar = document.getElementById('nav-bar');
-window.addEventListener('scroll', function () {
-    console.log("scrolling....");
 
-    if (this.window.pageYOffset >= 50) {
-        navBar.classList.add('sticyNavBar');
-        logo.style.color = "#fff";
+window.addEventListener('scroll', function () {
+   
+    if(screen.width >= 610){
+        if (this.window.pageYOffset >= 50) {
+            navBar.classList.add('sticyNavBar');
+            logo.style.color = "#fff";
+        }
+        else {
+            navBar.classList.remove('sticyNavBar');
+            logo.style.color = "#ff004f"
+        }
     }
-    else {
-        navBar.classList.remove('sticyNavBar');
-        logo.style.color = "#ff004f"
-    }
+
+    
 });
 
 // ------Navbar-----

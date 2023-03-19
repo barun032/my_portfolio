@@ -26,7 +26,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 10%;
+    padding: 20px 10%;
 }
 
 .sticyNavBar{
@@ -343,11 +343,15 @@ header .m-bar{
 
 @media only screen and (max-width: 600px){
 
+    .logo p{
+        font-size: 25px;
+    }
     header{
-        background-image: url(./images/phone-background.png);
+        background-image: url(./images/1679122689937-01.jpeg);
+        background-position: 75%;
     }
     .header-text{
-        padding-top: 100%;
+        padding-top: 80%;
         font-size: 16px;
     }
     .header-text h1{
@@ -356,6 +360,13 @@ header .m-bar{
     header .m-bar{
         display: block;
         font-size: 25px;
+    }
+    #nav-bar{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: black;
+        z-index: 1;
     }
     nav ul{
         background: #ff004f;
@@ -366,6 +377,7 @@ header .m-bar{
         height: 100%;
         padding-top: 50px;
         transition: 0.5s;
+        z-index: 1;
     }
     nav ul li{
         display: block;
